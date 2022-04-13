@@ -13,6 +13,12 @@ using namespace zich;
 
 int main() {
 
+    cout << "/**************************************/\n"
+            "/=========== Matrix Calculator ========/\n"
+            "/**************************************/\n";
+
+    cout << "Here is a quick demo from assignment." << endl;
+
     std::vector<double> identity = {1, 0, 0, 0, 1, 0, 0, 0, 1};
     std::vector<double> arr = {3, 0, 0, 0, 3, 0, 0, 0, 3};
     Matrix a{identity, 3, 3};  // constructor taking a vector and a matrix size
@@ -38,6 +44,8 @@ int main() {
               [0 6 0]
               [0 0 6]*/
 
+    cout << "End of the demo!" << endl;
+    cout << "********************************" <<endl;
 
     //input and output
     Matrix inMat1{{0},1,1};
@@ -48,16 +56,18 @@ int main() {
     cout << "Enter your second matrix:  ";
     cin >> inMat2;
     cout << "Your  second Matrix is: \n" << inMat2 << endl;
-    cout << "**" <<endl;
-    cout << "+ operator \n" << inMat1+inMat2 <<endl;
-    cout << "- operator \n" << inMat1-inMat2 <<endl;
-    cout << "* operator \n" << inMat1*inMat2 <<endl;
-    cout << "**" <<endl;
+    cout << "********************************" <<endl;
+    cout << "+ Operator \n" << inMat1+inMat2 <<endl;
+    cout << "- Operator \n" << inMat1-inMat2 <<endl;
+    cout << "* Operator \n" << inMat1*inMat2 <<endl;
+    cout << "********************************" <<endl;
     double scalar;
-    cout << "Choose a scalar: " ;
+    cout << "Choose a scalar (can be either float and integer): ";
     cin >> scalar;
     cout << "Your first matrix multiplication by the scalar is: \n" << scalar * inMat1 << endl <<endl;
     cout << "Your second matrix multiplication by the scalar is: \n" << scalar * inMat2 << endl;
     cout << "End of main!" << endl;
+    cout << "********************************" <<endl;
+
     return 0;
 }
