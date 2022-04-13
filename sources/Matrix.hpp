@@ -31,7 +31,6 @@ namespace zich{
     public:
         // Constructor
         Matrix (vector<double> matrix, int row, int col);
-        Matrix ();
 
         // Mathematical Operators
         /* Plus Operators */
@@ -62,5 +61,6 @@ namespace zich{
         bool operator!=(const Matrix& other) const;  /* Matrix != Other_Matrix operator */
 
         static bool compareByOperator(const Matrix&, const Matrix&, const string&) ;
+        void checkIfValid(string mat);
     };
 }
