@@ -22,9 +22,6 @@ test: TestRunner.o StudentTest1.o StudentTest2.o StudentTest3.o $(OBJECTS)
 %.o: %.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
-main: Main.o $(OBJECTS)
-	$(CXX) $(CXXFLAGS) $^ -o main
-
 $(OBJECT_PATH)/%.o: $(SOURCE_PATH)/%.cpp $(HEADERS)
 	$(CXX) $(CXXFLAGS) --compile $< -o $@
 
