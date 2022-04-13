@@ -296,7 +296,6 @@ istream& zich::operator>>(istream& is, Matrix& matrix)
     /*Split first by a comma - the string is valid so yields a valid result*/
     while (getline(ss, split, ',')) {
         if (row_cnt != 0) {split = split.substr(1, split.length()-1);}
-        cout << split << endl;
         std::erase(split, '['); std::erase(split, ']');
         stringstream ss_split{split};
         string num;
